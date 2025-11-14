@@ -4,6 +4,8 @@ metadata:
   name: rollout
   annotations:
     kubernetes.io/ingress.class: nginx
+    # Argo Rollouts가 이 Ingress를 관리하도록 허용
+    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   ingressClassName: nginx
   rules:
