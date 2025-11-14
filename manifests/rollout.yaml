@@ -6,6 +6,9 @@ spec:
   replicas: 5
   strategy:
     canary:
+      trafficRouting:
+        nginx:
+          stableIngres: rollout
       steps:
       - setWeight: 20
       - pause: {}
