@@ -6,7 +6,7 @@ spec:
   replicas: 5
   strategy:
     canary:
-      stableService: rollouts-demo
+      stableService: rollouts-yellow
       canaryService: rollouts-blue
       trafficRouting:
         nginx:
@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: rollouts-demo
-        image: docker.io/argoproj/rollouts-demo:blue
+        image: docker.io/argoproj/rollouts-demo:yellow
         ports:
         - name: http
           containerPort: 80
