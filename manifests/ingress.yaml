@@ -16,6 +16,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: rollouts-yellow
+                name: rollouts-blue
                 port:
                   number: 80
