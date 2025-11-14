@@ -10,7 +10,7 @@ spec:
       canaryService: rollouts-blue
       trafficRouting:
         nginx:
-          stableIngres: rollout
+          stableIngress: rollout
       steps:
       - setWeight: 20
       - pause: {}
